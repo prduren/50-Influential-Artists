@@ -260,8 +260,13 @@ function getArtistByIndex(artists, index) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-  /* code here */
+function removeArtist(artists, index1) {
+  for (var i = 0; i < artists.length; i++) {
+    if ((index1 = artists[i])) {
+      artists.splice(index1, 1);
+      return artists;
+    }
+  }
 }
 
 /**
@@ -269,34 +274,61 @@ function removeArtist(/*code here*/) {
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(artists) {
+  let twentiesArtists = [];
+  for (var i = 0; i < artists.length; i++) {
+    if (artists[i].years >= "1800 - 1800" && artists[i].years < "1900 - 1900") {
+      twentiesArtists.push(artists[i].name);
+    }
+  }
+  return twentiesArtists;
 }
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(artists) {
+  let superArtists = [];
+  for (var i = 0; i < artists.length; i++) {
+    if (artists[i].paintings > 100) {
+      superArtists.push(artists[i].name);
+    }
+  }
+  return superArtists;
 }
 
-/* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+console.log(lotsOfArt(artists));
 
-id: 21
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) "*/
+//  Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
-function addArtist(/* Code here */) {
-  /* Code here */
+let parker = {
+  id: 21,
+  name: "Parker Duren",
+  years: "1996 - 2020",
+  genre: "Web Design",
+  nationality: "American",
+  bio: "I am parker yes I am hehehe i enjoy rice and eggs",
+};
+
+function addArtist(parker) {
+  artists.push(parker);
+  return artists;
 }
 
+console.log(addArtist(parker));
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */) {
-  /* Code here */
+function checkArtist(artistName) {
+  var found = false;
+  for (var i = 0; i < artists.length; i++) {
+    if (artists[i].name === artistName) {
+      found = true;
+      break;
+    }
+  }
+  return found;
 }
+
+console.log(checkArtist("Parker Duren"));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
