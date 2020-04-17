@@ -240,8 +240,13 @@ artists[8].name = "Vincent van Gogh";
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
-function getArtistByIndex(id, name) {
-  /* code here */
+function getArtistByIndex(artists, index) {
+  inputIndex = index;
+  for (var i = 0; i < artists.length; i++) {
+    if ((index = artists[i])) {
+      return `The artist at index ${inputIndex} is ${artists[inputIndex].name}`;
+    }
+  }
 }
 
 /**
@@ -250,7 +255,7 @@ function getArtistByIndex(id, name) {
 /* Task 4: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the dat array at the index.
+ * removeArtist removes an artist from the data array at the index.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
