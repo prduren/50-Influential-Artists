@@ -25,12 +25,17 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+   Preprocessing is writing your CSS code (or in other words, the style for your page) in an easy to write and read way. It's called "preprocesing" because it is then process through to a regular CSS file so it can be read by the browser.
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   My favorite concept in preprocessing is the ability to organize your CSS in a meaningful, semantic, pretty way. I like being able to find what I need fast. The thing that gives me the most trouble with preprocessing is knowing the most efficient use cases for things like mixins. I understand their importance, but I yet lack the understanding of when they are most useful.
 3. How would you explain the concept of a variable to someone new to programming?
+   Variables in programming are simply words that are referencing something else. It's easier to write one or two words for a variable than a few lines of code every time you need to reference it. Just like "x" variables or any other variable in algebra, they're placeholders for something.
 4. What is the purpose of using functions in code?
+   Functions are similar to variables, as they contain information that may be reused multiple times throughout the coding process. A function name holds multiple lines of code that may be used later on in the program.
 5. What is a JSON data?
+   JSON stands for JavaScript Object Notation. It's necessary for the browser to be able to read javascript, and is also a lightweight way to easily transport and store code.
 
-You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
 ## Instructions
 
@@ -47,16 +52,16 @@ Follow these steps to set up your project:
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+- [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+- [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+- [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+- [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
-### Task 2a:  Minimum Viable Product - PreProcessing
+### Task 2a: Minimum Viable Product - PreProcessing
 
 #### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+- [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -68,20 +73,20 @@ Follow these steps to set up your project:
 7.cta.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
-* [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
-* [ ] Use at least 2 parameters to create your button
-* [ ] Create a hover state that changes the opacity of images to 80%
-* [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
+- [0] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+- [0] Add a viewport meta tag to the head of your index.html page
+- [][review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+- [0] Navigation Styles: Use the `navigation.less` file for styling.
+- [0] Main Content Styles: Use the `main.less` file for styling
+- [0] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+- [0] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+- [0] Use at least 2 parameters to create your button
+- [0] Create a hover state that changes the opacity of images to 80%
+- [0] Use good coding practices including adding responsive breakpoints to your code with media queries
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -91,11 +96,11 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals, also listed in `index.js`, where applicable:
 
-* [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
-* [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
-* [ ] Add responsive breakpoints to your code by using media queries
-* [ ] Add CSS animations
+- [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
+- [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
+- [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
+- [ ] Add responsive breakpoints to your code by using media queries
+- [ ] Add CSS animations
 
 ## Resources
 
@@ -109,6 +114,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
